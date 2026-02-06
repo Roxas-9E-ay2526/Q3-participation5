@@ -1,0 +1,13 @@
+.container {
+    background-color: lightblue;
+    border: 3px solid grey;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    background-image: url('67code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

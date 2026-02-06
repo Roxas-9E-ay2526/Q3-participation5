@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+<h1>SUM OF TWO VARIABLES</h1>
+<form>
+<label for="num1">First Number:</label>
+<input type="number" id="num1">
+<br>
+
+<label for="num2">Second Number</label>
+<input type="number" id="num2">
+<br>
+<p id="result">The sum of two variables is =  </p>
+<button type="button" class="btn btn-primary"onclick="window.location.reload()">Refresh</button>
+<button type="button" class="btn btn-success" onclick="sum()">Calculate</button>
+
+</form>
+</div>
+
+<script>
+function sum(){
+        let value1 = document.getElementById("num1").value;
+        let value2 = document.getElementById("num2").value;
+        let result = Number(value1) + Number(value2);
+
+        document.getElementById("result").innerHTML = "The sum of two variables is =" + result;
+    }
+</script>
+
+</body>
+</html>
